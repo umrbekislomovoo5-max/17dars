@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="result" class="result-box">Result:</div>
+
+        <label>Number 1:</label>
+        <input type="number" id="num1" placeholder="birinchi sonni kiriting">
+
+        <label>Number 2:</label>
+        <input type="number" id="num2" placeholder="ikkinchi sonni kiriting">
+
+        <label>Operator</label>
+        <select id="operator">
+            <option value="">operator tanlang</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <button onclick="calculate()">Calculate</button>
+        <button class="reset-btn" onclick="resetForm()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
